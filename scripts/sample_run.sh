@@ -66,7 +66,7 @@ cardano-cli transaction policyid \
 mkdir metadata/ metadata_staging/
 
 # In one terminal, now install the cardano-nft-vending-machine code (backend)
-git clone https://github.com/thaddeusdiamond/cardano-nft-vending-machine.git
+git clone https://github.com/SchmackDa/cardano-nft-vending-machine.git
 python3 -m venv venv
 venv/bin/pip3 install --upgrade pip
 venv/bin/pip3 install cardano-nft-vending-machine
