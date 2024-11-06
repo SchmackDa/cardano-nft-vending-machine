@@ -38,8 +38,52 @@ BLOCKFROST_PROTOCOL_TRANSLATOR = {
     'stakePoolTargetNum': 'n_opt',
     'treasuryCut': 'tau',
     'txFeeFixed': 'min_fee_b',
-    'txFeePerByte': 'min_fee_a'
+    'txFeePerByte': 'min_fee_a',
+    'utxoCostPerByte': 'coins_per_utxo_size',
+    'poolVotingThresholds': {
+        'committeeNoConfidence': 'pvt_committee_no_confidence',
+        'committeeNormal': 'pvt_committee_normal',
+        'hardForkInitiation': 'pvt_hard_fork_initiation',
+        'motionNoConfidence': 'pvt_committee_no_confidence',
+        'ppSecurityGroup': 'pvt_p_p_security_group'
+    },
+    'minFeeRefScriptCostPerByte': 'min_fee_ref_script_cost_per_byte',
+    'maxValueSize': 'max_val_size',
+    'maxTxExecutionUnits': {
+        'memory': 'max_tx_ex_mem',
+        'steps': 'max_tx_ex_steps'
+    },
+    'maxCollateralInputs': 'max_collateral_inputs',
+    'maxBlockExecutionUnits': {
+        'memory': 'max_block_ex_mem',
+        'steps': 'max_block_ex_steps'
+    },
+    'govActionLifetime': 'gov_action_lifetime',
+    'govActionDeposit': 'gov_action_deposit',
+    'executionUnitPrices': {
+        'priceMemory': 'price_mem',
+        'priceSteps': 'price_step'
+    },
+    'dRepActivity': 'drep_activity',
+    'dRepDeposit': 'drep_deposit',
+    'dRepVotingThresholds': {
+        'committeeNoConfidence': 'dvt_committee_no_confidence',
+        'committeeNormal': 'dvt_committee_normal',
+        'hardForkInitiation': 'dvt_hard_fork_initiation',
+        'motionNoConfidence': 'dvt_motion_no_confidence',
+        'ppEconomicGroup': 'dvt_p_p_economic_group',
+        'ppGovGroup': 'dvt_p_p_gov_group',
+        'ppNetworkGroup': 'dvt_p_p_network_group',
+        'ppTechnicalGroup': 'dvt_p_p_technical_group',
+        'treasuryWithdrawal': 'dvt_treasury_withdrawal',
+        'updateConstitution': 'dvt_update_to_constitution'
+    },
+    'collateralPercentage': 'collateral_percent',
+    'committeeMaxTermLength': 'committee_max_term_length',
+    'committeeMinSize': 'committee_min_size',
+    'costModels': 'cost_models_raw'
 }
+
 
 # Vending machine internal constants (global required)
 LOCKED_SUBDIR = 'in_proc'
